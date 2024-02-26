@@ -1,0 +1,51 @@
+<%- include('../layout/user/header.ejs') -%>
+
+
+  <div class="wrapper">
+    <h2>Create a new account</h2>
+    <% if (locals.error) { %>
+      <div class="alert alert-danger" role="alert">
+        <%= error %>
+      </div>
+      <%}%>
+        <form action="/signup" method="post" id="form">
+          <div class="input-box">
+
+
+
+            <input type="text" id="uname" name="uname" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+
+
+            <input type="email" class="error" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+
+
+            <input type="password" id="pass" name="password" placeholder="Create password" required>
+          </div>
+          
+          <div class="policy" id="check">
+
+            <input type="checkbox" style="display: block;">
+
+
+            <h3>I accept all terms & condition</h3>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Sign up">
+          </div>
+          <div class="text">
+            <h3>Already have an account? <a href="/login">Login now</a></h3>
+          </div>
+        </form>
+  </div>
+
+
+
+
+
+
+
+  <%- include('../layout/user/footer.ejs') -%>

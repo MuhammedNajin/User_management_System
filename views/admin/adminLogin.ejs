@@ -1,0 +1,51 @@
+<%- include('../layout/admin/adminHeader.ejs') -%>
+
+
+
+    <div class="center-div text-center" id="login" style="width: 100rem;">
+        <div class="container w-25 border py-5 shadow-lg " style="background-color: aliceblue; border-radius: 8px;">
+            <div class="title pb-5 ">
+                <h2 class="fw-bold ">Admin login</h2>
+                <%if(locals.logout){%>
+
+                    <div class="alert alert-success pt-3 " role="alert" style="font-size: 20px; font-weight: 400;">
+                        <%= logout %>
+                    </div>
+                    <%}%>
+
+                        <% if (locals.message) { %>
+                            <div class="alert alert-danger d-flex align-items-center  " role="alert">
+                                <%= message %>
+                            </div>
+                            <%}%>
+
+                                <!-- <form action="/router/login" method="post"> -->
+                                <form action="/admin/login" method="post" autocomplete="off">
+
+
+                                    <div class="input-group">
+                                        <input type="email" id="input" class="form-control  focus-ring" name="email"
+                                            placeholder="" style="width: 300px; box-shadow: none;">
+
+                                        <label class=" input-text">Email</label>
+                                    </div>
+
+
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" name="password" placeholder=""
+                                            style="width: 300px; box-shadow: none;">
+                                        <label class=" input-text">Password</label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <%- include('../layout/admin/adminFooter.ejs') -%>

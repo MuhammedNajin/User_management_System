@@ -1,0 +1,51 @@
+<%- include('../layout/admin/adminHeader.ejs') -%>
+
+
+<section>
+    <div class="container">
+
+        <form action="/admin/add-product" class="row g-3" method="post" enctype="multipart/form-data">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Name</label>
+              <input type="text" class="form-control" name="name" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Cetagory</label>
+              <input type="text" class="form-control" name="catagory" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Price</label>
+              <input type="text" class="form-control" id="inputAddress" name="price" placeholder="$.00">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Discription</label>
+              <input type="text" class="form-control" id="inputAddress2" name="discription" placeholder="Add deiscription">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Image</label>
+              <input type="file" name="Image" class="form-control" id="inputCity">
+            </div>
+           
+             
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Add Product</button>
+            </div>
+          </form>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('../layout/admin/adminFooter.ejs') -%>

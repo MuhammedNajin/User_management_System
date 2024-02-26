@@ -1,0 +1,45 @@
+    
+body {
+    background: #f1e7e7;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary--: #0275d8;
+  }
+  
+  
+  
+  .center-div {
+      margin-top: 10%;
+  }
+  
+  
+  .input-group {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border:2px solid #0275d8!important;
+    border-radius: 8px;
+  
+    background-color: none !important;
+  }
+  
+  .input-group .input-text{
+      position: absolute;
+      top: 4px;
+      left: 12px;
+      transition: .3s ease-in-out;
+      z-index: 9;
+      color:var(--primary--) ;
+    top: -10px;
+    
+    font-size: 1rem;
+    background-color:aliceblue;
+    font-weight: 400;
+    box-shadow: none !important;
+    outline-style: none !important;
+  }
+  
+  
+  
+  
